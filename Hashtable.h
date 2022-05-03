@@ -2,6 +2,7 @@
 #define HASHTABLE_H_
 
 #include "LinkedList.h"
+#include "utils.h"
 
 typedef struct info info;
 struct info {

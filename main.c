@@ -53,11 +53,13 @@ validate_command(uint nr_arg, uint *idx1, uint *idx2)
 int main(void)
 {
     char command[MAX_LEN];
-    hashtable_t *library = ht_create(HMAX, hash_function_string, compare_function_strings, sizeof(hashtable_t));
+    hashtable_t *library = ht_create(HMAX, hash_function_string, compare_function_strings, sizeof(book_t **));
 
-    while(1) {
+    while (1) {
         scanf("%s", command);
-        if(strcmp(command, "ADD_BOOK") == 0)
+        if (strcmp(command, "ADD_BOOK") == 0)
             add_book(library);
+		else if (strcmp(command, "GET_BOOK") == 0)
+			get_book(library);
     }
 }

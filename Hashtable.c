@@ -6,9 +6,6 @@
 #include "Hashtable.h"
 #include "utils.h"
 
-#define uint unsigned char
-#define uchar unsigned char
-
 /*
  * Functii de comparare a cheilor:
  */

@@ -1,6 +1,8 @@
 #ifndef LINKED_LIST_H_
 #define LINKED_LIST_H_
 
+#include "utils.h"
+
 typedef struct ll_node_t ll_node_t;
 struct ll_node_t
 {

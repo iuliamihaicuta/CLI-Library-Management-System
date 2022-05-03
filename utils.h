@@ -7,6 +7,9 @@
 #ifndef __UTILS_H_
 #define __UTILS_H_
 
+#define uint unsigned int
+#define uchar unsigned char
+
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
