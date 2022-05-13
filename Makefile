@@ -10,8 +10,8 @@ all: main
 
 build: $(TARGETS)
 
-main: main.c LinkedList.c Hashtable.c librarian_commands.c
-	$(CC) $(CFLAGS) main.c LinkedList.c Hashtable.c librarian_commands.c -o tema2
+main: main.c LinkedList.c Hashtable.c librarian_commands.c users_commands.c ranking.c
+	$(CC) $(CFLAGS) main.c LinkedList.c Hashtable.c librarian_commands.c users_commands.c ranking.c -o main
 
 clean:
 	rm -f $(TARGETS)
